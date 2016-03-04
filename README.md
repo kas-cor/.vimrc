@@ -1,5 +1,5 @@
 # .vimrc
-My gVim for Linux
+My Vim for Linux
 
 ## Installing
 

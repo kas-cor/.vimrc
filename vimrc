@@ -1,6 +1,6 @@
 " ----------------------------------------------------
 " Vundle
-" git clone https://github.com/gmarik/Vundle.vim.git ~/vimfiles/bundle/Vundle.vim
+" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " ----------------------------------------------------
 
 set nocompatible              " be iMproved, required
@@ -60,11 +60,6 @@ filetype plugin indent on    " required
 " like <leader>w saves the current file
 let mapleader = ","
 let g:mapleader = ","
-
-" ------
-" CTags
-" ------
-" autocmd BufWritePost *.php,*.js,*.py let msg=system("ctags -R") | if msg!="" | echo msg | endif
 
 " ------
 " Nerd Tree
