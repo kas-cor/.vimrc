@@ -52,6 +52,37 @@ Leader key `,`
 
 `Ctrl+e` expand
 
+#### Commentary
+
+`gc` - Comment selection in visual mode
+
+`gcc` - Comment line in normal mode
+
+`gcap` - Comment paragraph in normal mode
+
+`:7,17Commentary` - Comment from 7 to 17 lines
+
+`:g/TODO/Commentary` - Comment lines whith text "TODO"
+
+#### Easygrep
+
+`,vv` - Grep for the word under the cursor, match all occurences, like |gstar|
+
+`,vV` - Grep for the word under the cursor, match whole word, like |star|
+
+`,va` - Like vv, but add to existing list
+
+`,vA` - Like vV, but add to existing list
+
+`,vr` - Perform a global search search on the word under the cursor and prompt for a pattern with which to replace it.
+
+`,vo` - Select the files to search in and set grep options
+
+`,vy*` - Invoke any option from the options explorer, where * is the shortcut for that option.
+e.g. `,vyr` - toggles recursion
+
+`,vyb` - sets buffer grepping mode etc.
+
 ### Misc
 
 `,m` - remove the Windows ^M - when the encodings gets messed up
