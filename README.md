@@ -62,7 +62,7 @@ Leader key `,`
 
 `:7,17Commentary` - Comment from 7 to 17 lines
 
-`:g/TODO/Commentary` - Comment lines whith text "TODO"
+`:g/TODO/Commentary` - Comment lines with text "TODO"
 
 #### Easygrep
 
