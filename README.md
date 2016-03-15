@@ -13,9 +13,23 @@ or
 git clone https://github.com/kas-cor/.vimrc.git ~/.vim && cd ~/.vim && ./install.sh
 ```
 
+## Requirements
+
+neocomplete requires Vim 7.3.885+ compiled with if_lua.
+
+Ubuntu, install vim-nox
+```bash
+apt-get install vim-nox -y
+```
+
 ## Useing
 
 Leader key `,`
+
+### NeoComplete
+
+`Ctrl+k` - expand snippet
+`Tab` - Next step
 
 ### NerdTree
 
