@@ -7,6 +7,10 @@ My Vim for Linux
 git clone https://github.com/kas-cor/.vimrc.git ~/.vim
 cd ~/.vim
 ./install.sh
+
+or
+
+git clone https://github.com/kas-cor/.vimrc.git ~/.vim && cd ~/.vim && ./install.sh
 ```
 
 ## Useing
