@@ -29,6 +29,7 @@ Leader key `,`
 ### NeoComplete
 
 `Ctrl+k` - expand snippet
+
 `Tab` - Next step
 
 ### NerdTree
