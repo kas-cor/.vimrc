@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>.vimrc by kas-cor</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>.vimrc</h1>
+        <h2>My dot file for VIM (Linux)</h2>
+        <a href="https://github.com/kas-cor/.vimrc" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="vimrc" class="anchor" href="#vimrc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>.vimrc</h1>
+
+<p>My Vim for Linux</p>
+
+<h2>
+<a id="installing" class="anchor" href="#installing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing</h2>
+
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/kas-cor/.vimrc.git <span class="pl-k">~</span>/.vim
+<span class="pl-c1">cd</span> <span class="pl-k">~</span>/.vim
+./install.sh
+
+or
+
+git clone https://github.com/kas-cor/.vimrc.git <span class="pl-k">~</span>/.vim <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> <span class="pl-k">~</span>/.vim <span class="pl-k">&amp;&amp;</span> ./install.sh</pre></div>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>neocomplete requires Vim 7.3.885+ compiled with if_lua.</p>
+
+<p>Ubuntu, install vim-nox</p>
+
+<div class="highlight highlight-source-shell"><pre>apt-get install vim-nox -y</pre></div>
+
+<h2>
+<a id="useing" class="anchor" href="#useing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Useing</h2>
+
+<p>Leader key <code>,</code></p>
+
+<h3>
+<a id="neocomplete" class="anchor" href="#neocomplete" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NeoComplete</h3>
+
+<p><code>Ctrl+k</code> - expand snippet</p>
+
+<p><code>Tab</code> - Next step</p>
+
+<h3>
+<a id="nerdtree" class="anchor" href="#nerdtree" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NerdTree</h3>
+
+<p><code>,,</code> - open/close</p>
+
+<p><code>Ctrl+\</code> - path where open file</p>
+
+<h3>
+<a id="multiple-cursors" class="anchor" href="#multiple-cursors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Multiple cursors</h3>
+
+<p><code>Ctrl+s</code> - add cursor in palace</p>
+
+<h3>
+<a id="ctrlp" class="anchor" href="#ctrlp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CtrlP</h3>
+
+<p><code>Ctrl+f</code> or <code>,j</code> - open</p>
+
+<p><code>Ctrl+b</code> - open buffers</p>
+
+<h3>
+<a id="emmet" class="anchor" href="#emmet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Emmet</h3>
+
+<p><code>Ctrl+e</code> expand</p>
+
+<h4>
+<a id="commentary" class="anchor" href="#commentary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Commentary</h4>
+
+<p><code>gc</code> - Comment selection in visual mode</p>
+
+<p><code>gcc</code> - Comment line in normal mode</p>
+
+<p><code>gcap</code> - Comment paragraph in normal mode</p>
+
+<p><code>:7,17Commentary</code> - Comment from 7 to 17 lines</p>
+
+<p><code>:g/TODO/Commentary</code> - Comment lines with text "TODO"</p>
+
+<h4>
+<a id="easygrep" class="anchor" href="#easygrep" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Easygrep</h4>
+
+<p><code>,vv</code> - Grep for the word under the cursor, match all occurences, like |gstar|</p>
+
+<p><code>,vV</code> - Grep for the word under the cursor, match whole word, like |star|</p>
+
+<p><code>,va</code> - Like vv, but add to existing list</p>
+
+<p><code>,vA</code> - Like vV, but add to existing list</p>
+
+<p><code>,vr</code> - Perform a global search search on the word under the cursor and prompt for a pattern with which to replace it.</p>
+
+<p><code>,vo</code> - Select the files to search in and set grep options</p>
+
+<p><code>,vy*</code> - Invoke any option from the options explorer, where * is the shortcut for that option.
+e.g. <code>,vyr</code> - toggles recursion</p>
+
+<p><code>,vyb</code> - sets buffer grepping mode etc.</p>
+
+<h3>
+<a id="misc" class="anchor" href="#misc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Misc</h3>
+
+<p><code>,m</code> - remove the Windows ^M - when the encodings gets messed up</p>
+
+<p><code>,q</code> - quickly open a buffer for scribble</p>
+
+<p><code>,x</code> - quickly open a markdown buffer for scribble</p>
+
+<p><code>,pp</code> - toggle paste mode on and off</p>
+
+<p><code>0</code> - Remap VIM 0 to first non-blank character</p>
+
+<p><code>,f</code> - auto format all doc</p>
+
+<p><code>,ba</code> - close all the buffers</p>
+
+<p><code>,cd</code> - switch CWD to the directory of the open buffer</p>
+
+<p><code>,&lt;Enter&gt;</code> - disable highlight</p>
+
+<p><code>,e</code> - fast editing and reloading of vimrc configs</p>
+
+<p><code>,w</code> - fast saving</p>
+
+<h4>
+<a id="findreplace" class="anchor" href="#findreplace" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Find/Replace</h4>
+
+<p><code>;;</code> - replace word in cursor without confirm</p>
+
+<p><code>;'</code> - replace word in cursor with confirm</p>
+
+<h4>
+<a id="spell-checking" class="anchor" href="#spell-checking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Spell checking</h4>
+
+<p>Pressing <code>,ss</code> will toggle and untoggle spell checking</p>
+
+<p>Shortcuts using <code>&lt;leader&gt;</code></p>
+
+<p><code>,sn</code> - ]s</p>
+
+<p><code>,sp</code> - [s</p>
+
+<p><code>,sa</code> - zg</p>
+
+<p><code>,s?</code> - z=</p>
+
+<h4>
+<a id="allow-to-copypaste-between-vim-instances" class="anchor" href="#allow-to-copypaste-between-vim-instances" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Allow to copy/paste between VIM instances</h4>
+
+<p><code>,y</code> - copy the current visual selection to ~/.vbuf</p>
+
+<p><code>,y</code> - copy the current line to the buffer file if no visual selection</p>
+
+<p><code>,p</code> - paste the contents of the buffer file</p>
+
+<h4>
+<a id="copypaste-ctrlcctrlv" class="anchor" href="#copypaste-ctrlcctrlv" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Copy/paste Ctrl+C/Ctrl+V</h4>
+
+<p><code>Ctrl+c</code> - copy</p>
+
+<p><code>Ctrl+v</code> - paste</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/kas-cor/.vimrc/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/kas-cor/.vimrc/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/kas-cor/.vimrc"></a> is maintained by <a href="https://github.com/kas-cor">kas-cor</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
