@@ -122,7 +122,7 @@ nmap <F8> :TagbarToggle<CR>
 " Git-gutter
 " ------
 let g:gitgutter_avoid_cmd_prompt_on_windows = 1
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 
 " ------
 " Emmet
