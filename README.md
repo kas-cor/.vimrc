@@ -85,7 +85,7 @@ e.g. `,vyr` - toggles recursion
 
 ### vim-prettier
 
-`,f` - Run prettier formating
+`,ff` - Run prettier formating
 
 ### Misc
 
@@ -98,6 +98,8 @@ e.g. `,vyr` - toggles recursion
 `,pp` - toggle paste mode on and off
 
 `0` - Remap VIM 0 to first non-blank character
+
+`,f` - auto format all doc
 
 `,ba` - close all the buffers
 

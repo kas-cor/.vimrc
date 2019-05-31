@@ -143,13 +143,13 @@ let g:neocomplete#min_keyword_length = 1
 " ------
 " vim-prettier
 " ------
-nmap <Leader>f <Plug>(Prettier)
+nmap <Leader>ff <Plug>(Prettier)
 " number of spaces per indentation level
 let g:prettier#config#tab_width = 4
 " none|es5|all
 let g:prettier#config#trailing_comma = 'all'
 " flow|babylon|typescript|css|less|scss|json|graphql|markdown
-let g:prettier#config#parser = 'flow'
+let g:prettier#config#parser = 'babylon'
 
 
 " Enable snipMate compatibility feature.
@@ -406,7 +406,7 @@ autocmd BufReadPost *
 set viminfo^=%
 
 " Auto format all doc
-" map <leader>f gg=G``
+map <leader>f gg=G``
 
 " ----------------------------------------------------
 " Status line
