@@ -83,6 +83,10 @@ e.g. `,vyr` - toggles recursion
 
 `,vyb` - sets buffer grepping mode etc.
 
+### vim-prettier
+
+`,f` - Run prettier formating
+
 ### Misc
 
 `,m` - remove the Windows ^M - when the encodings gets messed up
@@ -94,8 +98,6 @@ e.g. `,vyr` - toggles recursion
 `,pp` - toggle paste mode on and off
 
 `0` - Remap VIM 0 to first non-blank character
-
-`,f` - auto format all doc
 
 `,ba` - close all the buffers
 

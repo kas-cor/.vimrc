@@ -1,59 +1,58 @@
 " ----------------------------------------------------
-" Vundle
-" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" vim-plug
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 " ----------------------------------------------------
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
+" Specify a directory for plugins
+call plug#begin('~/.vim/bundle')
+"
 " Visual
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-sensible'
-Plugin 'aserebryakov/filestyle'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-sensible'
+Plug 'aserebryakov/filestyle'
 
 " Search
-Plugin 'kien/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/tabman.vim'
-Plugin 'dkprice/vim-easygrep'
+Plug 'kien/ctrlp.vim'
+Plug 'majutsushi/tagbar'
+Plug 'myusuf3/numbers.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/tabman.vim'
+Plug 'dkprice/vim-easygrep'
 
 " Edit
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'mattn/emmet-vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'gregsexton/MatchTag'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'gregsexton/MatchTag'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'prettier/vim-prettier', {'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 " NeoComplete
-Plugin 'Shougo/neocomplete.vim'
+Plug 'Shougo/neocomplete.vim'
 
 " JavaScript
-Plugin 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/javascript-libraries-syntax.vim'
 
 " Git
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Colorsheme
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'w0ng/vim-hybrid'
+Plug 'altercation/vim-colors-solarized'
+Plug 'w0ng/vim-hybrid'
 
-call vundle#end()            " required
+" Initialize plugin system
+call plug#end()
 filetype plugin indent on    " required
 
 " With a map leader it's possible to do extra key combinations
@@ -140,6 +139,18 @@ let g:neocomplete#enable_auto_select = 1
 let g:neocomplete#enable_auto_delimiter = 1
 let g:neocomplete#enable_auto_close_preview = 1
 let g:neocomplete#min_keyword_length = 1
+
+" ------
+" vim-prettier
+" ------
+nmap <Leader>f <Plug>(Prettier)
+" number of spaces per indentation level
+let g:prettier#config#tab_width = 4
+" none|es5|all
+let g:prettier#config#trailing_comma = 'all'
+" flow|babylon|typescript|css|less|scss|json|graphql|markdown
+let g:prettier#config#parser = 'flow'
+
 
 " Enable snipMate compatibility feature.
 let g:neosnippet#enable_snipmate_compatibility = 1
@@ -395,7 +406,7 @@ autocmd BufReadPost *
 set viminfo^=%
 
 " Auto format all doc
-map <leader>f gg=G``
+" map <leader>f gg=G``
 
 " ----------------------------------------------------
 " Status line
