@@ -22,6 +22,15 @@ Ubuntu, install vim-nox
 apt-get install vim-nox -y
 ```
 
+Node.js + Npm + Yarn
+
+[Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/)
+
+Installing Yarn
+```bash
+npm i yarn -g
+```
+
 ## Useing
 
 Leader key `,`
