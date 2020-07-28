@@ -1,18 +1,6 @@
 # .vimrc
 My Vim for Linux!
 
-## Installing
-
-```bash
-git clone https://github.com/kas-cor/.vimrc.git ~/.vim
-cd ~/.vim
-./install.sh
-
-or
-
-git clone https://github.com/kas-cor/.vimrc.git ~/.vim && cd ~/.vim && ./install.sh
-```
-
 ## Requirements
 
 ### neocomplete requires Vim 7.3.885+ compiled with if_lua.
@@ -25,6 +13,12 @@ apt-get install vim-nox -y
 ### Yarn
 
 [Debian / Ubuntu, installing Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
+
+## Installing
+
+```bash
+wget -O - https://raw.githubusercontent.com/kas-cor/.vimrc/master/install.sh | bash
+```
 
 ## Useing
 
