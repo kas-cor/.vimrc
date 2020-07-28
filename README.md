@@ -15,21 +15,16 @@ git clone https://github.com/kas-cor/.vimrc.git ~/.vim && cd ~/.vim && ./install
 
 ## Requirements
 
-neocomplete requires Vim 7.3.885+ compiled with if_lua.
+### neocomplete requires Vim 7.3.885+ compiled with if_lua.
 
-Ubuntu, install vim-nox
+Debian / Ubuntu, installing vim-nox
 ```bash
 apt-get install vim-nox -y
 ```
 
-Node.js + Npm + Yarn
+### Yarn
 
-[Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/)
-
-Installing Yarn
-```bash
-npm i yarn -g
-```
+[Debian / Ubuntu, installing Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
 
 ## Useing
 
