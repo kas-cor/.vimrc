@@ -17,7 +17,7 @@ apt-get install vim-nox -y
 ## Installing
 
 ```bash
-wget -O - https://raw.githubusercontent.com/kas-cor/.vimrc/master/install.sh | bash
+wget -O - https://git.io/JUzw5 | bash
 ```
 
 ## Useing
