@@ -85,6 +85,14 @@ e.g. `,vyr` - toggles recursion
 
 `,ff` - Run prettier formating
 
+### AirLine
+
+Uncomment this line for nerd-fonts is on
+
+```
+let g:airline_powerline_fonts = 1
+```
+
 ### Misc
 
 `,m` - remove the Windows ^M - when the encodings gets messed up
