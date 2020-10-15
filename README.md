@@ -1,13 +1,27 @@
 # .vimrc
+
 My Vim for Linux!
 
 ## Requirements
 
-### Deoplete requires Python3 & pynvim
+### Deoplete requires Vim 8.1+ & Python3 & pynvim
 
-Install Python3 on your Linux OS
+#### Install Vim 8.1 on Ubuntu/Debian
 
-Install module pynvim
+```bash
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt upgrade
+sudo apt install vim
+```
+
+#### Install Python3 on Ubuntu/Debian
+
+```bash
+sudo apt install python3
+```
+
+#### Install module pynvim
 
 ```bash
 pip3 install pynvim
