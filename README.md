@@ -27,7 +27,7 @@ sudo apt install python3
 pip3 install pynvim
 ```
 
-### Yarn
+### Vim-prettier requires Yarn
 
 [Debian / Ubuntu, installing Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
 
