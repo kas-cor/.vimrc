@@ -36,8 +36,14 @@ Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'prettier/vim-prettier', {'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
-" NeoComplete
-Plug 'Shougo/neocomplete.vim'
+" Deoplete
+if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
+else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 " JavaScript
 Plug 'othree/javascript-libraries-syntax.vim'
@@ -130,15 +136,9 @@ let g:user_emmet_mode='a'
 imap <c-e> <c-y>,
 
 " ------
-" neocomplete
+" deoplete
 " ------
-let g:acp_enableAtStartup = 0
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#enable_auto_select = 1
-let g:neocomplete#enable_auto_delimiter = 1
-let g:neocomplete#enable_auto_close_preview = 1
-let g:neocomplete#min_keyword_length = 1
+let g:deoplete#enable_at_startup = 1
 
 " ------
 " vim-prettier

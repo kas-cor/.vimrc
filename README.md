@@ -3,11 +3,14 @@ My Vim for Linux!
 
 ## Requirements
 
-### neocomplete requires Vim 7.3.885+ compiled with if_lua.
+### Deoplete requires Python3 & pynvim
 
-Debian / Ubuntu, installing vim-nox
+Install Python3 on your Linux OS
+
+Install module pynvim
+
 ```bash
-apt-get install vim-nox -y
+pip3 install pynvim
 ```
 
 ### Yarn
@@ -24,7 +27,7 @@ wget -O - https://git.io/JUzw5 | bash
 
 Leader key `,`
 
-### NeoComplete
+### Deoplete
 
 `Ctrl+k` - expand snippet
 
