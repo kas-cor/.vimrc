@@ -18,8 +18,7 @@ sudo apt install vim
 #### Install Python3 & pip3 on Ubuntu/Debian
 
 ```bash
-sudo apt install python3
-sudo apt install python3-pip
+sudo apt install python3 python3-pip
 ```
 
 #### Install module pynvim
