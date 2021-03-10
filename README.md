@@ -19,7 +19,7 @@ sudo apt install vim
 
 ```bash
 sudo apt install python3
-sudo apt install python-pip
+sudo apt install python3-pip
 ```
 
 #### Install module pynvim
